@@ -7,6 +7,7 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - What did the game look like the first time you ran it?
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
+  The game was not guessing the numbers correct. When I first entered a number it notified to go Lower insted it should have said Go Higher, as the secret was 33. The history list was not storing the numbers as expected, when i entered a number pressed on submit guess, the history was storing the previous number instead of the current. Show hint checkbox was not working. The Attempts allowed was 8 in normal mode, but I could enter only 7 times. New game button not working.
 
 **Bug Reproduction Log**
 
@@ -14,9 +15,9 @@ Document at least 3 bugs you found. Add rows as needed.
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
+| 2| Go Higher | Go Lower | None |
+| |5  Go Higher| Go Lower | None |
+| 35 | Go Lower | Go Higher | Out of attempts! The secret was 33. Score: -15|
 
 ---
 
@@ -25,7 +26,8 @@ Document at least 3 bugs you found. Add rows as needed.
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
-
+I have used Claude for this project.
+One example of an AI suggestion that was incorrect was for when i asked AI to 
 ---
 
 ## 3. Debugging and testing your fixes
