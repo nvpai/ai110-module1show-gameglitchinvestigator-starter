@@ -69,6 +69,8 @@ pyflakes: no issues
 
 <!-- Describe what you changed based on the AI's suggestions -->
 
+Based on the AI's suggestions, I moved the four logic functions into `logic_utils.py` and added a short docstring to each one explaining what it returns. I removed the leftover `NotImplementedError` placeholders and kept each function small and single-purpose. After the refactor, pyflakes still reported no issues.
+
 ---
 
 ## Model Comparison (SF11)
